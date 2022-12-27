@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetIettArsivGorev_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIettArsivGorev_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIettArsivGorev_XMLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIettArsivGorev_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIettArsivGorev_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIettArsivGorev_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArsivGorev_Sas_IBB_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArsivGorev_Sas_IBB_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArsivGorev_Sas_IBB_XMLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArsivGorev_Sas_IBB_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArsivGorev_Sas_IBB_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArsivGorev_Sas_IBB_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIBBZamanCizelgesi_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIBBZamanCizelgesi_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIBBZamanCizelgesi_XMLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIBBZamanCizelgesi_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIBBZamanCizelgesi_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIBBZamanCizelgesi_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMahalleHat_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ilceAdi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mahalle" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMahalleHat_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMahalleHat_XMLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMahalleHat_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ilceAdi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mahalle" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMahalleHat_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMahalleHat_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGuzergahLineString_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GuzergahKodu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGuzergahLineString_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGuzergahLineString_XMLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGuzergahLineString_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GuzergahKodu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGuzergahLineString_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGuzergahLineString_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHatBazliYolcuAdet_XML">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetHatBazliYolcuAdet_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHatBazliYolcuAdet_XMLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHatBazliYolcuAdet_json">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetHatBazliYolcuAdet_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHatBazliYolcuAdet_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIettYolculukHat_XML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIettYolculukHat_XMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIettYolculukHat_XMLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIettYolculukHat_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tarih" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIettYolculukHat_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIettYolculukHat_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetIettArsivGorev_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIettArsivGorev_XML" />
+  </wsdl:message>
+  <wsdl:message name="GetIettArsivGorev_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIettArsivGorev_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIettArsivGorev_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIettArsivGorev_json" />
+  </wsdl:message>
+  <wsdl:message name="GetIettArsivGorev_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIettArsivGorev_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArsivGorev_Sas_IBB_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArsivGorev_Sas_IBB_XML" />
+  </wsdl:message>
+  <wsdl:message name="GetArsivGorev_Sas_IBB_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArsivGorev_Sas_IBB_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArsivGorev_Sas_IBB_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArsivGorev_Sas_IBB_json" />
+  </wsdl:message>
+  <wsdl:message name="GetArsivGorev_Sas_IBB_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArsivGorev_Sas_IBB_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIBBZamanCizelgesi_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIBBZamanCizelgesi_XML" />
+  </wsdl:message>
+  <wsdl:message name="GetIBBZamanCizelgesi_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIBBZamanCizelgesi_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIBBZamanCizelgesi_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIBBZamanCizelgesi_json" />
+  </wsdl:message>
+  <wsdl:message name="GetIBBZamanCizelgesi_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIBBZamanCizelgesi_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMahalleHat_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMahalleHat_XML" />
+  </wsdl:message>
+  <wsdl:message name="GetMahalleHat_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMahalleHat_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMahalleHat_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMahalleHat_json" />
+  </wsdl:message>
+  <wsdl:message name="GetMahalleHat_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMahalleHat_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGuzergahLineString_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGuzergahLineString_XML" />
+  </wsdl:message>
+  <wsdl:message name="GetGuzergahLineString_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGuzergahLineString_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGuzergahLineString_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGuzergahLineString_json" />
+  </wsdl:message>
+  <wsdl:message name="GetGuzergahLineString_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGuzergahLineString_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHatBazliYolcuAdet_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHatBazliYolcuAdet_XML" />
+  </wsdl:message>
+  <wsdl:message name="GetHatBazliYolcuAdet_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHatBazliYolcuAdet_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHatBazliYolcuAdet_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHatBazliYolcuAdet_json" />
+  </wsdl:message>
+  <wsdl:message name="GetHatBazliYolcuAdet_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHatBazliYolcuAdet_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIettYolculukHat_XMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIettYolculukHat_XML" />
+  </wsdl:message>
+  <wsdl:message name="GetIettYolculukHat_XMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIettYolculukHat_XMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIettYolculukHat_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIettYolculukHat_json" />
+  </wsdl:message>
+  <wsdl:message name="GetIettYolculukHat_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIettYolculukHat_jsonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ibb360Soap">
+    <wsdl:operation name="GetIettArsivGorev_XML">
+      <wsdl:input message="tns:GetIettArsivGorev_XMLSoapIn" />
+      <wsdl:output message="tns:GetIettArsivGorev_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIettArsivGorev_json">
+      <wsdl:input message="tns:GetIettArsivGorev_jsonSoapIn" />
+      <wsdl:output message="tns:GetIettArsivGorev_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArsivGorev_Sas_IBB_XML">
+      <wsdl:input message="tns:GetArsivGorev_Sas_IBB_XMLSoapIn" />
+      <wsdl:output message="tns:GetArsivGorev_Sas_IBB_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArsivGorev_Sas_IBB_json">
+      <wsdl:input message="tns:GetArsivGorev_Sas_IBB_jsonSoapIn" />
+      <wsdl:output message="tns:GetArsivGorev_Sas_IBB_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIBBZamanCizelgesi_XML">
+      <wsdl:input message="tns:GetIBBZamanCizelgesi_XMLSoapIn" />
+      <wsdl:output message="tns:GetIBBZamanCizelgesi_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIBBZamanCizelgesi_json">
+      <wsdl:input message="tns:GetIBBZamanCizelgesi_jsonSoapIn" />
+      <wsdl:output message="tns:GetIBBZamanCizelgesi_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMahalleHat_XML">
+      <wsdl:input message="tns:GetMahalleHat_XMLSoapIn" />
+      <wsdl:output message="tns:GetMahalleHat_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMahalleHat_json">
+      <wsdl:input message="tns:GetMahalleHat_jsonSoapIn" />
+      <wsdl:output message="tns:GetMahalleHat_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGuzergahLineString_XML">
+      <wsdl:input message="tns:GetGuzergahLineString_XMLSoapIn" />
+      <wsdl:output message="tns:GetGuzergahLineString_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGuzergahLineString_json">
+      <wsdl:input message="tns:GetGuzergahLineString_jsonSoapIn" />
+      <wsdl:output message="tns:GetGuzergahLineString_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHatBazliYolcuAdet_XML">
+      <wsdl:input message="tns:GetHatBazliYolcuAdet_XMLSoapIn" />
+      <wsdl:output message="tns:GetHatBazliYolcuAdet_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHatBazliYolcuAdet_json">
+      <wsdl:input message="tns:GetHatBazliYolcuAdet_jsonSoapIn" />
+      <wsdl:output message="tns:GetHatBazliYolcuAdet_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIettYolculukHat_XML">
+      <wsdl:input message="tns:GetIettYolculukHat_XMLSoapIn" />
+      <wsdl:output message="tns:GetIettYolculukHat_XMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIettYolculukHat_json">
+      <wsdl:input message="tns:GetIettYolculukHat_jsonSoapIn" />
+      <wsdl:output message="tns:GetIettYolculukHat_jsonSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ibb360Soap" type="tns:ibb360Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetIettArsivGorev_XML">
+      <soap:operation soapAction="http://tempuri.org/GetIettArsivGorev_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIettArsivGorev_json">
+      <soap:operation soapAction="http://tempuri.org/GetIettArsivGorev_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArsivGorev_Sas_IBB_XML">
+      <soap:operation soapAction="http://tempuri.org/GetArsivGorev_Sas_IBB_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArsivGorev_Sas_IBB_json">
+      <soap:operation soapAction="http://tempuri.org/GetArsivGorev_Sas_IBB_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIBBZamanCizelgesi_XML">
+      <soap:operation soapAction="http://tempuri.org/GetIBBZamanCizelgesi_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIBBZamanCizelgesi_json">
+      <soap:operation soapAction="http://tempuri.org/GetIBBZamanCizelgesi_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMahalleHat_XML">
+      <soap:operation soapAction="http://tempuri.org/GetMahalleHat_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMahalleHat_json">
+      <soap:operation soapAction="http://tempuri.org/GetMahalleHat_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuzergahLineString_XML">
+      <soap:operation soapAction="http://tempuri.org/GetGuzergahLineString_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuzergahLineString_json">
+      <soap:operation soapAction="http://tempuri.org/GetGuzergahLineString_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHatBazliYolcuAdet_XML">
+      <soap:operation soapAction="http://tempuri.org/GetHatBazliYolcuAdet_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHatBazliYolcuAdet_json">
+      <soap:operation soapAction="http://tempuri.org/GetHatBazliYolcuAdet_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIettYolculukHat_XML">
+      <soap:operation soapAction="http://tempuri.org/GetIettYolculukHat_XML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIettYolculukHat_json">
+      <soap:operation soapAction="http://tempuri.org/GetIettYolculukHat_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ibb360Soap12" type="tns:ibb360Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetIettArsivGorev_XML">
+      <soap12:operation soapAction="http://tempuri.org/GetIettArsivGorev_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIettArsivGorev_json">
+      <soap12:operation soapAction="http://tempuri.org/GetIettArsivGorev_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArsivGorev_Sas_IBB_XML">
+      <soap12:operation soapAction="http://tempuri.org/GetArsivGorev_Sas_IBB_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArsivGorev_Sas_IBB_json">
+      <soap12:operation soapAction="http://tempuri.org/GetArsivGorev_Sas_IBB_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIBBZamanCizelgesi_XML">
+      <soap12:operation soapAction="http://tempuri.org/GetIBBZamanCizelgesi_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIBBZamanCizelgesi_json">
+      <soap12:operation soapAction="http://tempuri.org/GetIBBZamanCizelgesi_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMahalleHat_XML">
+      <soap12:operation soapAction="http://tempuri.org/GetMahalleHat_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMahalleHat_json">
+      <soap12:operation soapAction="http://tempuri.org/GetMahalleHat_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuzergahLineString_XML">
+      <soap12:operation soapAction="http://tempuri.org/GetGuzergahLineString_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuzergahLineString_json">
+      <soap12:operation soapAction="http://tempuri.org/GetGuzergahLineString_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHatBazliYolcuAdet_XML">
+      <soap12:operation soapAction="http://tempuri.org/GetHatBazliYolcuAdet_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHatBazliYolcuAdet_json">
+      <soap12:operation soapAction="http://tempuri.org/GetHatBazliYolcuAdet_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIettYolculukHat_XML">
+      <soap12:operation soapAction="http://tempuri.org/GetIettYolculukHat_XML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIettYolculukHat_json">
+      <soap12:operation soapAction="http://tempuri.org/GetIettYolculukHat_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ibb360">
+    <wsdl:port name="ibb360Soap" binding="tns:ibb360Soap">
+      <soap:address location="https://api.ibb.gov.tr/iett/ibb360.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ibb360Soap12" binding="tns:ibb360Soap12">
+      <soap12:address location="https://api.ibb.gov.tr/iett/ibb360.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
