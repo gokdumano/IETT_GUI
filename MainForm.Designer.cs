@@ -28,37 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer = new System.Windows.Forms.SplitContainer();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
-            this.splitContainer.SuspendLayout();
+            this.routesContainer = new System.Windows.Forms.SplitContainer();
+            this.stopsContainer = new System.Windows.Forms.SplitContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.routesContainer)).BeginInit();
+            this.routesContainer.Panel2.SuspendLayout();
+            this.routesContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stopsContainer)).BeginInit();
+            this.stopsContainer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // splitContainer
+            // routesContainer
             // 
-            this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer.Name = "splitContainer";
-            this.splitContainer.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer.SplitterDistance = 266;
-            this.splitContainer.TabIndex = 1;
+            this.routesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.routesContainer.Location = new System.Drawing.Point(0, 0);
+            this.routesContainer.Name = "routesContainer";
+            this.routesContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // routesContainer.Panel2
+            // 
+            this.routesContainer.Panel2.Controls.Add(this.stopsContainer);
+            this.routesContainer.Size = new System.Drawing.Size(800, 450);
+            this.routesContainer.SplitterDistance = 195;
+            this.routesContainer.TabIndex = 1;
+            // 
+            // stopsContainer
+            // 
+            this.stopsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stopsContainer.Location = new System.Drawing.Point(0, 0);
+            this.stopsContainer.Name = "stopsContainer";
+            this.stopsContainer.Size = new System.Drawing.Size(800, 251);
+            this.stopsContainer.SplitterDistance = 266;
+            this.stopsContainer.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.splitContainer);
+            this.Controls.Add(this.routesContainer);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
-            this.splitContainer.ResumeLayout(false);
+            this.routesContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.routesContainer)).EndInit();
+            this.routesContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.stopsContainer)).EndInit();
+            this.stopsContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.SplitContainer splitContainer;
+        private System.Windows.Forms.SplitContainer routesContainer;
+        private System.Windows.Forms.SplitContainer stopsContainer;
     }
 }
 
